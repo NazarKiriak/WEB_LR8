@@ -1,0 +1,143 @@
+.product_info {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "h h h"
+    "c c c"
+    "a a a";
+  background: #33cccc;
+  animation: color 9s infinite linear;
+  height: 100vh;
+}
+
+@keyframes color {
+  0% {
+    background: #33cccc;
+  }
+  20% {
+    background: #33cc36;
+  }
+  40% {
+    background: #b8cc33;
+  }
+  60% {
+    background: #fcca00;
+  }
+  80% {
+    background: #33cc36;
+  }
+  100% {
+    background: #33cccc;
+  }
+}
+
+.wrapper_good {
+  overflow-y: scroll;
+}
+
+.wrapper_good::-webkit-scrollbar {
+  display: none;
+}
+
+.about_good {
+  border: 2px solid #1c1c1c;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  grid-area: h;
+}
+
+.about_good p {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.comments {
+  border: 2px solid #1c1c1c;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  grid-area: a;
+}
+
+.all_comments {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0.5em 0.5em;
+}
+
+.new_comment {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 15px 15px 30px #b3b3b3, -15px -15px 30px #ffffff;
+  border: 1px solid #1c1c1c;
+  border-radius: 25px;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.new_comment h4 {
+  text-decoration: underline;
+  display: flex;
+}
+
+.new_comment h4 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.new_comment h5 {
+  margin-top: -5px;
+}
+
+.form_comments {
+  border: 2px solid #1c1c1c;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  grid-area: c;
+}
+
+.form_comments textarea {
+  width: 400px;
+  height: 120px;
+  border-color: #1c1c1c;
+  border-width: 3px;
+  font-size: 18px;
+}
+
+.form_comments textarea:focus {
+  box-shadow: 0px 0px 20px 0px rgba(110, 110, 110, 0.92);
+}
+
+button {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter .fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit .fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in-out;
+}

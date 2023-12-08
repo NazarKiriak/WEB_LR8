@@ -1,0 +1,14 @@
+.wrapper_header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  grid-area: h;
+  border: 2px solid #1c1c1c;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  font-size: 18px;
+  color: #333;
+}

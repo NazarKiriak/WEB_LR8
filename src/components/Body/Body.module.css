@@ -1,0 +1,133 @@
+.body {
+  border: 2px solid #1c1c1c;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  grid-area: b;
+}
+
+.bodyContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.body ol {
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+label {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected_products span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #cc0000;
+}
+
+.productInfo_currency {
+  display: flex;
+  justify-content: space-between;
+}
+
+body button {
+  width: 160px;
+  height: 50px;
+  background-color: #558bf7;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+body button:hover {
+  background-color: #e39b1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  border: 2px solid black;
+}
+
+body button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.5);
+}
+
+.goods {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dialog_gallery {
+  margin-top: 15px;
+}
+
+.dialog-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.dialog-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dialog-exit {
+  opacity: 1;
+}
+
+.dialog-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog h2 {
+  margin-bottom: 10px;
+}
+
+.delete {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.delete:hover {
+  transform: translateY(-4px);
+}
+
+.delete:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

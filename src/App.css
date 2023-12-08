@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color:rgb(196, 152, 235);
+  color: #0d0c0c;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "h h h"
+    "m b b"
+    "f f f";
+}

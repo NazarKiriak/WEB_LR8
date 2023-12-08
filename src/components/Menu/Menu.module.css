@@ -1,0 +1,27 @@
+.menu {
+  border: 2px solid #1c1c1c;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  grid-area: m;
+  color: #333;
+}
+.authText {
+  font-size: 24;
+  font-weight: bold;
+}
+.button {
+  margin-top: 10px;
+}
+
+.category_links {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  gap: 1em;
+}
